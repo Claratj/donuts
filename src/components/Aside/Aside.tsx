@@ -15,9 +15,23 @@ export default function Aside() {
 						}
 						to={DONUTS_ROUTE}
 					>
+						<span className={classNames('material-icons-outlined md-16', style.Nav__icon)}>bakery_dining</span>
 						Donuts
 					</NavLink>
 					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
+						Donut
+					</NavLink>
+					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
+						Donut
+					</NavLink>
+					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
+						Donut
+					</NavLink>
+					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
 						Donut
 					</NavLink>
 				</nav>
