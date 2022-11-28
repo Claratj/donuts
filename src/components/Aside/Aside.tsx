@@ -2,11 +2,15 @@ import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 import { DONUTS_ROUTE, DONUT_ROUTE } from 'routes/routes';
 import style from './Aside.module.scss';
+import donutIllustration from './images/donut_illustration.svg';
+import donutLogo from './images/donut_logo.svg';
 
 export default function Aside() {
 	return (
 		<aside className={style.Aside}>
-			<div className={style.Aside__header}>Header</div>
+			<div className={style.Aside__header}>
+				<img className={style.Aside__header__img} src={donutLogo} alt="Donut illustration" />
+			</div>
 			<div className={style.Aside__body}>
 				<nav className={style.Nav}>
 					<NavLink
@@ -36,7 +40,10 @@ export default function Aside() {
 					</NavLink>
 				</nav>
 			</div>
-			<div className={style.Aside__footer}>Footer</div>
+			<div className={style.Aside__footer}>
+				{/* <img src={donut} alt="Donut illustration" /> */}
+				<img className={style.Aside__footer__img} src={donutIllustration} alt="Donut illustration" />
+			</div>
 		</aside>
 	);
 }

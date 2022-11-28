@@ -11,6 +11,7 @@
 		justify-content: center;
 		height: 90px;
 		width: 100%;
+		padding-top: 20px;
 	}
 
 	&__body {
@@ -20,6 +21,9 @@
 
 	&__footer{
 		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		bottom: 0;
 	}
@@ -77,3 +81,16 @@
 	}
 }
 
+.Aside__header {
+	&__img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+.Aside__footer {
+	&__img {
+		width: 240px;
+		padding-bottom: 20px;
+	}
+}

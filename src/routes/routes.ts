@@ -2,8 +2,7 @@ export const ERROR_ROUTE = '/error';
 
 // Dashboard routes
 
-export const DASHBOARD_ROUTE = '/dashboard';
-export const OVERVIEW_ROUTE = '/dashboard/overview';
+export const OVERVIEW_ROUTE = '/';
 
-export const DONUTS_ROUTE = '/dashboard/donuts';
-export const DONUT_ROUTE = '/dashboard/donuts/:id';
+export const DONUTS_ROUTE = '/donuts';
+export const DONUT_ROUTE = '/donuts/:id';
