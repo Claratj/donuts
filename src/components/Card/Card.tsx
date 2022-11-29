@@ -11,7 +11,9 @@ export default function Card() {
 						<path />
 					</svg>
 					<div>
-						<h3 className={style.Card__title}>kim Cattrall</h3>
+						<h3 className={style.Card__title} data-testid="donut-name">
+							kim Cattrall
+						</h3>
 						<span className={style.Card__status}>3 hours ago</span>
 					</div>
 				</div>
