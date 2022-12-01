@@ -3,7 +3,7 @@ import IDonut from 'types/IDonut';
 const DONUTS_ENDPOINT = '/overview/donuts';
 
 
-export interface ICardsReadResponse {
+export interface IDonutslistResponse {
 	donuts: Array<IDonut>;
 }
 
