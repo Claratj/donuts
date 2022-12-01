@@ -1,14 +1,14 @@
 import Aside from 'components/Aside/Aside';
-import Card from 'components/Card/Card';
+import DonutsPage from 'pages/donuts/Donuts.page';
 import style from './Overview.module.scss';
 
 export default function OverviewPage() {
 	return (
 		<div className={style.Overview}>
 			<Aside />
-			<main>
+			<main className={style.Overview__main}>
 				Overview Page
-				<Card />
+				<DonutsPage />
 			</main>
 		</div>
 	);
