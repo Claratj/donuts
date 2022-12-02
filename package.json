@@ -47,5 +47,8 @@
     "msw": "^0.49.1",
     "stylelint-config-prettier": "^9.0.4",
     "typescript": "^4.9.3"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

@@ -1,5 +1,5 @@
-import getDonutResponse from 'mocks/dummies/donuts/get.donut.response';
-import listDonutsResponse from 'mocks/dummies/donuts/list.donuts.response';
+import getDonutResponse from 'mocks/serverResponses/donuts/get.donut.response';
+import listDonutsResponse from 'mocks/serverResponses/donuts/list.donuts.response';
 import { rest } from 'msw';
 
 export default [
