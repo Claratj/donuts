@@ -1,4 +1,3 @@
-import IAllergens from "./IAllergens";
 
 
 export default interface IDonut {
@@ -6,5 +5,5 @@ export default interface IDonut {
 	name: string;
 	inStock: boolean;
 	description: string;
-	allergens: Array<IAllergens>;
+	allergens: Array<string>;
 }

@@ -1,8 +1,9 @@
+import IDonut from 'types/IDonut';
 import style from './Card.module.scss';
 
-export default function Card() {
+export default function Card(props: IDonut) {
 	return (
-		<div className={style.Card}>
+		<div className={style.Card} key="">
 			<img src="https://i.imgur.com/2DhmtJ4.jpg" className={style.Card__image} alt="" data-testid="donut-card" />
 
 			<div className={style.Card__overlay}>
@@ -12,14 +13,12 @@ export default function Card() {
 					</svg>
 					<div>
 						<h3 className={style.Card__title} data-testid="donut-name">
-							kim Cattrall
+							{props.name}
 						</h3>
-						<span className={style.Card__status}>3 hours ago</span>
+						<span className={style.Card__status}>{props.inStock}</span>
 					</div>
 				</div>
-				<p className={style.Card__description}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?
-				</p>
+				<p className={style.Card__description}>{props.description}</p>
 			</div>
 		</div>
 	);
