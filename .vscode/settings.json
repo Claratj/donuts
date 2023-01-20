@@ -5,13 +5,10 @@
 		"source.organizeImports": true
 	},
 	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.guides.bracketPairs": "active",
 	"explorer.compactFolders": false,
 	"jest.jestCommandLine": "npm test --",
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"cSpell.words": [
-		"localforage",
-		"smacss",
-		"stylelint"
-	]
+	"cSpell.words": ["localforage", "smacss", "stylelint"]
 }
