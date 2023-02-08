@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
+import IDonut from 'types/IDonut';
 import Card from './Card';
 
 describe('<Card/>', () => {
 	it('should show a card when is loaded', () => {
-		const dummyDonut = {
+		const dummyDonut: IDonut = {
 			id: 'dummy_id',
 			name: 'dummy_donut_name',
 			inStock: true,
@@ -25,5 +26,5 @@ describe('<Card/>', () => {
 		expect(screen.getByTestId('donut-name') as HTMLElement).toBeVisible();
 	});
 
-	it('should show a description when the user make hover', () => {});
+	it('should show a description when the user make hover over the card element', () => {});
 });

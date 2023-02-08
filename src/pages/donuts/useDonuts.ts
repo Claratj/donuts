@@ -6,7 +6,7 @@ export default function useDonuts() {
 
 	return {
 		props: {
-			donuts: listDonutsQuery.data as IDonut[],
+			donuts: listDonutsQuery.data?.donuts as IDonut[],
 			serverError: listDonutsQuery.error?.message || '',
 		},
 		status: listDonutsQuery.status,
