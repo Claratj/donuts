@@ -1,11 +1,11 @@
 .Card {
 	position: relative;
 	display: block;
-	height: 400px;
-	width: 300px;
+	height: 280px;
+	width: 220px;
 	border-radius: 40px;
-  overflow: hidden;
-  text-decoration: none;
+	overflow: hidden;
+	text-decoration: none;
 
 	&__image {
 		width: 100%;
@@ -21,7 +21,7 @@
 		border-radius: 40px;
 		background-color: white;
 		transform: translateY(100%);
-		transition: .2s ease-in-out;
+		transition: 0.2s ease-in-out;
 	}
 
 	&:hover &__overlay {
@@ -37,7 +37,7 @@
 		border-radius: calc(40 * 1px) 0 0 0;
 		background-color: white;
 		transform: translateY(-100%);
-		transition: .2s ease-in-out;
+		transition: 0.2s ease-in-out;
 	}
 
 	&__arc {
@@ -51,7 +51,7 @@
 
 	&__arc path {
 		fill: white;
-		d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+		d: path('M 40 80 c 22 0 40 -22 40 -40 v 40 Z');
 	}
 
 	&:hover &__header {
@@ -67,36 +67,31 @@
 
 	&__title {
 		font-size: 1em;
-		margin: 0 0 .3em;
-		color: #6A515E;
+		margin: 0 0 0.3em;
+		color: #6a515e;
 	}
 
 	&__tagline {
 		display: block;
 		margin: 1em 0;
-		font-family: "MockFlowFont";
-		font-size: .8em;
-		color: #D7BDCA;
+		font-family: 'MockFlowFont';
+		font-size: 0.8em;
+		color: #d7bdca;
 	}
 
 	&__status {
-		font-size: .8em;
-		color: #D7BDCA;
+		font-size: 0.8em;
+		color: #d7bdca;
 	}
 
 	&__description {
 		padding: 0 2em 2em;
 		margin: 0;
-		color: #D7BDCA;
-		font-family: "MockFlowFont";
+		color: #d7bdca;
+		font-family: 'MockFlowFont';
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 3;
 		overflow: hidden;
 	}
 }
-
-
-
-
-

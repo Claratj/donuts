@@ -4,7 +4,7 @@ import style from './Card.module.scss';
 export default function Card(props: IDonut) {
 	return (
 		<div className={style.Card} key="">
-			<img src="https://i.imgur.com/2DhmtJ4.jpg" className={style.Card__image} alt="" data-testid="donut-card" />
+			<img src={props.imageUrl} className={style.Card__image} alt="" data-testid="donut-card" />
 
 			<div className={style.Card__overlay}>
 				<div className={style.Card__header}>

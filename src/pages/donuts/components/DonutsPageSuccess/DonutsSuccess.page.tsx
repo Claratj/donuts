@@ -7,7 +7,6 @@ interface IDonutsContentProps {
 }
 
 export default function DonutsSuccessPage(props: IDonutsContentProps) {
-	console.log(props.donuts);
 	return (
 		<div className={style.Donuts}>
 			{props.donuts.map((donut, i) => (
