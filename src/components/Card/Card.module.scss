@@ -1,15 +1,20 @@
 .Card {
 	position: relative;
-	display: block;
-	height: 280px;
-	width: 220px;
-	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 240px;
+	width: 240px;
+	padding: 20px 0;
+	margin-bottom: 30px;
+	border-radius: 30px;
 	overflow: hidden;
 	text-decoration: none;
+	background-color: lightblue;
 
 	&__image {
-		width: 100%;
-		height: 100%;
+		width: 70%;
+		height: 70%;
 	}
 
 	&__overlay {
@@ -32,10 +37,9 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		gap: 2em;
-		padding: 2em;
+		padding: 16px 20px;
 		border-radius: calc(40 * 1px) 0 0 0;
-		background-color: white;
+		background-color: lightpink;
 		transform: translateY(-100%);
 		transition: 0.2s ease-in-out;
 	}
@@ -50,7 +54,7 @@
 	}
 
 	&__arc path {
-		fill: white;
+		fill: lightpink;
 		d: path('M 40 80 c 22 0 40 -22 40 -40 v 40 Z');
 	}
 
@@ -63,6 +67,10 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
+		background-color: lightcoral;
+	}
+
+	&__name {
 	}
 
 	&__title {
@@ -71,27 +79,19 @@
 		color: #6a515e;
 	}
 
-	&__tagline {
-		display: block;
-		margin: 1em 0;
-		font-family: 'MockFlowFont';
-		font-size: 0.8em;
-		color: #d7bdca;
+	&__info {
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 18px;
 	}
 
 	&__status {
-		font-size: 0.8em;
-		color: #d7bdca;
+		font-size: 10px;
 	}
 
 	&__description {
-		padding: 0 2em 2em;
 		margin: 0;
-		color: #d7bdca;
-		font-family: 'MockFlowFont';
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 3;
-		overflow: hidden;
 	}
 }

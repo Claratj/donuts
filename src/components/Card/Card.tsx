@@ -11,14 +11,22 @@ export default function Card(props: IDonut) {
 					<svg className={style.Card__arc} xmlns="http://www.w3.org/2000/svg">
 						<path />
 					</svg>
-					<div>
+					<div className={style.Card_name}>
 						<h3 className={style.Card__title} data-testid="donut-name">
 							{props.name}
 						</h3>
-						<span className={style.Card__status}>{props.inStock}</span>
+
+						{props.inStock ? (
+							<span className={style.Card__status}> in stock</span>
+						) : (
+							<span className={style.Card__status}>out of stock</span>
+						)}
 					</div>
 				</div>
-				<p className={style.Card__description}>{props.description}</p>
+				<div className={style.Card__info}>
+					<span>{props.allergens}</span>
+					<p className={style.Card__description}>{props.description}</p>
+				</div>
 			</div>
 		</div>
 	);

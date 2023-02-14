@@ -23,7 +23,7 @@ export default {
 			name: 'New spidy',
 			imageUrl:
 				'https://res.cloudinary.com/dq7xglvpp/image/upload/v1676304944/donuts/vecteezy_halloween-donut-watercolor_11215444_269_1_-min_bnfzl7.png',
-			inStock: true,
+			inStock: false,
 			description: 'Lorem ipsun whatever',
 			allergens: ['milk', 'nuts'],
 		},
