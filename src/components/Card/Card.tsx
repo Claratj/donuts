@@ -24,7 +24,7 @@ export default function Card(props: IDonut) {
 					</div>
 				</div>
 				<div className={style.Card__info}>
-					<span>{props.allergens}</span>
+					<div>{props.allergens ? props.allergens.map((allergen, i) => <span>{allergen}</span>) : ''}</div>
 					<p className={style.Card__description}>{props.description}</p>
 				</div>
 			</div>
