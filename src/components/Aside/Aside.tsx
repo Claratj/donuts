@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
-import { DONUTS_ROUTE, DONUT_ROUTE } from 'routes/routes';
+import { DONUTS_ROUTE, ICECREAMS_ROUTE, MUFFINS_ROUTE } from 'routes/routes';
 import style from './Aside.module.scss';
 import donutIllustration from './images/donut_illustration.svg';
 import donutLogo from './images/donut_logo.svg';
@@ -23,21 +23,13 @@ export default function Aside() {
 						<span className={classNames('material-icons md-16', style.Nav__icon)}>bakery_dining</span>
 						Donuts
 					</NavLink>
-					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+					<NavLink className={style.Nav__link} to={MUFFINS_ROUTE}>
 						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
-						Donut
+						Muffins
 					</NavLink>
-					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
+					<NavLink className={style.Nav__link} to={ICECREAMS_ROUTE}>
 						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
-						Donut
-					</NavLink>
-					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
-						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
-						Donut
-					</NavLink>
-					<NavLink className={style.Nav__link} to={DONUT_ROUTE}>
-						<span className={classNames('material-icons md-16', style.Nav__icon)}>face</span>
-						Donut
+						Popsicles
 					</NavLink>
 				</nav>
 			</div>
